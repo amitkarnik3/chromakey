@@ -17,7 +17,7 @@ function setup() {
     var trg = seriously.target('#can');
 
     var effect = seriously.effect('blur');
-    effect.amount = '#blur-range';
+    //effect.amount = '#blur-range';
     effect.source = src;
     trg.source = effect;
 
