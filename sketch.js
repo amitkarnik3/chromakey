@@ -8,6 +8,7 @@ function setup() {
     video = createCapture(VIDEO);
     video.size(640, 480);
     video.id('vid');
+    video.hide();
     slider = createSlider(0, 1, 0.5, 0.01);
     slider.id('blur-range');
 
@@ -17,7 +18,7 @@ function setup() {
     var trg = seriously.target('#can');
 
     var effect = seriously.effect('blur');
-    //effect.amount = '#blur-range';
+    effect.amount = '#blur-range';
     effect.source = src;
     trg.source = effect;
 
